@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Posts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <h1>{{party.what}}</h1>
+    <p>Posted By: {{party.planner.first_name}} {{party.planner.last_name}}</p>
+    <p>Location: {{party.location}}</p>
+    <p>When: {{party.when}}</p>
+    <p>All Ages Welcome: {%if party.all_ages == 1%}True{%else%}False{%endif%}</p>
+    <p>Description: {{party.description}}</p>
+    <a href="/welcome" class="btn btn-primary">Home</a>
+</body>
+</html>
